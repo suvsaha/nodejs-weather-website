@@ -6,7 +6,7 @@ const axios = require('axios')
 
         axios.get(weatherUrl)
             .then((response) => { 
-                    callback(undefined, 'It is currently ' + response.data.main.temp + ' degress out. Humidity is  ' + response.data.main.humidity + ' and forecast is '+ response.data.weather[0].description)
+                    callback(undefined, 'It is currently ' + response.data.main.temp + ' degress out. Humidity is  ' + response.data.main.humidity + ' and forecast is '+ response.data.weather[0].description + '.')
             })
             .catch((error) => {
                 if(error.response){
